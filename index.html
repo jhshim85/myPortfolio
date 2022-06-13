@@ -4,11 +4,209 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/daf18e1bf9.js" crossorigin="anonymous"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>Jaehyun(Jay) Shim</title>
 </head>
 <body>
-  
+  <nav>
+    <div class="wrapper">
+      <ul class="menu__main">
+        <li>
+          <i class="fa fa-home"></i>
+          <a href="./index.html#home">Home</a>
+        </li>
+        <li>
+          <i class="fa fa-user"></i>
+          <a href="./index.html#about">About Me</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <a href="./index.html#skills">Skill</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-panorama"></i>
+          <a href="./index.html#projects">Project</a>
+        </li>
+        <li>
+          <i class="fa fa-envelope-open"></i>
+          <a href="./index.html#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
+  <header id="home">
+    <div class="wrapper">
+      <h1 class="heading__greeting">Hello!</h1>
+      <h2 class="heading__name">I'm Jaehyun(Jay).<span class="headding__occupation">Front-End Developer</span></h2>
+      <h2 class="headding__intro">I am a front-end web developer focused on planning, designing and creating simple & user-friendly products that improves the lives of those around me.</h2>
+      <a class="heading__button" href="about.html">
+        <span class="heading__button--text">more about me</span>
+        <span class="heading__button--icon fa fa-arrow-right"></span>
+      </a>
+    </div>
+  </header>
+  
+  <main>
+    <div class="wrapper">
+      <section class="about" id="about">
+        <div class="about__container">
+          <h2 class="about__heading">About Me</h2>
+          <div class="about__pic--container">
+            <img src="./assets/IMG_4611.jpg" alt="my picture">
+          </div>
+          <div class="about__text--container">
+            <p class="about__text"><em>Challenge, Innovative, Simple</em></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum non nihil similique et aliquid nesciunt provident id alias quod architecto sapiente repellendus maiores cumque, officiis accusantium harum commodi quis animi saepe. Beatae ea temporibus architecto et aliquid officia quae, voluptates error nihil, debitis minima facere rem excepturi. Animi maxime repellat repellendus nihil laborum accusantium aperiam excepturi culpa, officia dolorem minus deserunt architecto ipsum qui et, laudantium vero atque vitae similique sunt debitis labore iusto. Voluptas dolorum nisi sunt incidunt molestiae, ipsa maiores consequuntur sit, fugit, debitis at? Non incidunt minima quisquam exercitationem. Nisi quae possimus, minima quisquam impedit animi eligendi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="skills__container">
+          <h2 class="skills__heading">Skills</h2>
+          <div class="skills__container--tech">
+            <h3 class="skills__type--tech">Technical Skills</h3>
+            <ul class="skills__list--tech">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>REST APIs</li>
+              <li>Firebase</li>
+              <li>React</li>
+              <li>Git / Github</li>
+              <li>Terminal</li>
+              <li>Responsive Design</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+          <div class="skills__container--core">
+            <h3 class="skills__type--core">Core Skills</h3>
+            <ul class="skills__list--core">
+              <li>Creative & innovative mind</li>
+              <li>Teamwork / Collaboration</li>
+              <li>Organization</li>
+              <li>Analyzing and solving complex problems</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="projects__container">
+          <h2 class="projects__heading">Projects</h2>
+          <ul class="projects__list">
+            <li>
+              <div class="project__container--pic">
+                <a href="https://bespoke-medovik-334094.netlify.app/">
+                  <img src="./assets/projectBarCart.png" alt="picture of Bar Cart App">
+                </a>
+              </div>
+              <div class="project__container--text">
+                <div class="project__title">
+                  <h3>Bar Cart</h3>
+                  <span class="icon__container--github">
+                    <a href="https://github.com/mkDirInc/projectBarCart">
+                      <i class="fab fa-github"></i>
+                      <span class="sr-only">Link to Bar Cart Github repo</span></a>
+                  </span>
+                  <span class="icon__container--live">
+                    <a href="https://bespoke-medovik-334094.netlify.app/">
+                      <i class="fas fa-link"></i>
+                      <span class="sr-only">Link to Bar Cart live website</span>
+                    </a>
+                  </span>
+                </div>
+                <div class="project__skill">
+                  <ul class="project__skill--list">
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>JavaScript</li>
+                    <li>REST API</li>
+                  </ul>
+                </div>
+                <div class="project__description">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia mollitia a, neque ipsum nam quos culpa, impedit voluptates rerum consequatur consequuntur id minima sed voluptate. Odit quia architecto illum distinctio reprehenderit laborum quis sunt voluptates commodi. Cum a ipsam beatae, voluptate corrupti ut nihil delectus voluptas suscipit quasi omnis adipisci.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="project__container--pic">
+                <a href="https://clinquant-pastelito-376499.netlify.app/">
+                  <img src="./assets/projectSophie.png" alt="picture of project Sophie">
+                </a>
+              </div>
+              <div class="project__container--text">
+                <div class="project__title">
+                  <h3>All about Sophie</h3>
+                  <span class="icon__container--github">
+                    <a href="https://github.com/jhshim85/JaehyunShimProjectOneSophie">
+                      <i class="fab fa-github"></i>
+                      <span class="sr-only">Link to project Sophie Github repo</span></a>
+                  </span>
+                  <span class="icon__container--live">
+                    <a href="https://clinquant-pastelito-376499.netlify.app/">
+                      <i class="fas fa-link"></i>
+                      <span class="sr-only">Link to project Sophie live website</span>
+                    </a>
+                  </span>
+                </div>
+                <div class="project__skill">
+                  <ul class="project__skill--list">
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+                <div class="project__description">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia mollitia a, neque ipsum nam quos culpa, impedit
+                    voluptates rerum consequatur consequuntur id minima sed voluptate. Odit quia architecto illum distinctio
+                    reprehenderit laborum quis sunt voluptates commodi. Cum a ipsam beatae, voluptate corrupti ut nihil delectus
+                    voluptas suscipit quasi omnis adipisci.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__container">
+          <h2 class="contact__heading">Contact Me</h2>
+          <div class="contact__container--left">
+            <address>
+              <p>Toronto / Calgary, Canada</p>
+            </address>
+          </div>
+          <div class="contact__container--right">
+            <ul>
+              <li>
+                <a href="mailto: jaehyunshim85@gmail.com">Email</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jaehyun-shim-4640a6238/">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://github.com/jhshim85">Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>© 2022 Jaehyun(Jay) Shim</p>
+  </footer>
   <script src="./scripts/script.js"></script>
 </body>
 </html>
