@@ -1,0 +1,18 @@
+nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #ffb400;
+  color: #111;
+  .menu__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding: 15px 20px;
+      color: #111;
+    }
+  }
+}
