@@ -1,0 +1,21 @@
+header {
+  height: 100vh;
+  background-color: #111;
+}
+
+.heading__greeting {
+  display: inline-block;
+  color: #ffb400;
+}
+.heading__name {
+  color: #ffb400;
+}
+.heading__occupation,
+.heading__intro {
+  color: white;
+}
+
+.heading__button {
+  border-radius: 5px;
+  border: 1px solid white;
+}
