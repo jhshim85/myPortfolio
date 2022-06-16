@@ -305,7 +305,7 @@ nav .menu__main a {
 
 header {
   height: 100vh;
-  width: 70%;
+  width: 80%;
 }
 
 .heading__greeting {
@@ -352,4 +352,65 @@ header {
   color: #ffffff;
   border-radius: 50%;
   background-color: rgba(255, 180, 0, 0.5);
+}
+
+.about {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 80%;
+}
+
+.about__heading {
+  color: white;
+  text-transform: uppercase;
+}
+.about__heading span {
+  color: #ffb400;
+}
+.about__heading--bg {
+  font-size: 80px;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.07);
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+.about__container .about__pic--container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(35% - 10px);
+          flex: 1 0 calc(35% - 10px);
+}
+.about__container .about__pic--container img {
+  width: 80%;
+}
+.about__container .about__text--container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(50% - 10px);
+          flex: 1 0 calc(50% - 10px);
+  text-align: left;
+}
+.about__container .about__text--container .about__text {
+  color: #ffb400;
+}
+.about__container .about__text--container p {
+  color: white;
 }
