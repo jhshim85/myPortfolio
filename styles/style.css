@@ -478,3 +478,118 @@ header {
   color: #ffb400;
   font-size: 50px;
 }
+
+.projects {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 80%;
+}
+
+.projects__heading {
+  color: white;
+  text-transform: uppercase;
+}
+.projects__heading span {
+  color: #ffb400;
+}
+.projects__heading--bg {
+  font-size: 80px;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.07);
+}
+
+.projects__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.projects__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.projects__list li .project__pic--container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(45% - 10px);
+          flex: 1 0 calc(45% - 10px);
+}
+.projects__list li .project__pic--container img {
+  width: 80%;
+}
+.projects__list li .project__text--container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(45% - 10px);
+          flex: 1 0 calc(45% - 10px);
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffb400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.project__skill--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+.project__skill--list li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20px;
+          flex: 1 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin-top: 50px;
+  gap: 10px;
+}
+.project__skill--list li i {
+  color: #ffb400;
+}
+
+.project__description {
+  color: white;
+}
