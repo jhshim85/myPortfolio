@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background-color: #111;
+  width: 70%;
 }
 
 .heading__greeting {
@@ -16,6 +16,30 @@ header {
 }
 
 .heading__button {
-  border-radius: 5px;
+  border-radius: 35px;
   border: 1px solid white;
+  padding: 15px 70px 15px 35px;
+  position: relative;
+  text-align: center;
+  &--text {
+    position: relative;
+  }
+  &--icon {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: rgba(255, 180, 0, $alpha: 0.5);
+  }
 }
+// .fa-arrow-right::before {
+//   content: "\f061";
+// }

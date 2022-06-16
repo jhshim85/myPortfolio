@@ -1,13 +1,15 @@
 nav {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
   z-index: 10;
+  height: calc(100vh - 200px);
+  top: 100px;
   background-color: #ffb400;
   color: #111;
   .menu__main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     a {

@@ -245,7 +245,7 @@ ul, li, a {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
@@ -269,12 +269,17 @@ img {
      object-fit: cover;
 }
 
+body {
+  background-color: #111;
+}
+
 nav {
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
   z-index: 10;
+  height: calc(100vh - 200px);
+  top: 100px;
   background-color: #ffb400;
   color: #111;
 }
@@ -282,6 +287,10 @@ nav .menu__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -296,7 +305,7 @@ nav .menu__main a {
 
 header {
   height: 100vh;
-  background-color: #111;
+  width: 70%;
 }
 
 .heading__greeting {
@@ -314,6 +323,33 @@ header {
 }
 
 .heading__button {
-  border-radius: 5px;
+  border-radius: 35px;
   border: 1px solid white;
+  padding: 15px 70px 15px 35px;
+  position: relative;
+  text-align: center;
+}
+.heading__button--text {
+  position: relative;
+}
+.heading__button--icon {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 19px;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: rgba(255, 180, 0, 0.5);
 }
