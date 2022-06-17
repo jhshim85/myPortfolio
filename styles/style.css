@@ -311,7 +311,7 @@ nav .menu__main i {
 
 header {
   height: 100vh;
-  width: 80%;
+  width: 90%;
 }
 
 .heading__greeting {
@@ -364,7 +364,7 @@ header {
   text-align: center;
   position: relative;
   height: 100vh;
-  width: 80%;
+  width: 90%;
 }
 
 .about__heading {
@@ -402,14 +402,15 @@ header {
 }
 .about__container .about__pic--container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(40% - 10px);
-          flex: 1 0 calc(40% - 10px);
-  background: url(../assets/IMG_4611.jpg) 70%/cover no-repeat;
+      -ms-flex: 1 0 calc(35% - 10px);
+          flex: 1 0 calc(35% - 10px);
+  background: url(../assets/IMG_4611.jpg) top right/cover no-repeat;
   height: calc(90vh - 100px);
   border-radius: 30px;
   -webkit-box-shadow: 0 0 10px #ffb400;
           box-shadow: 0 0 10px #ffb400;
   z-index: 111;
+  min-width: 350px;
 }
 .about__container .about__text--container {
   -webkit-box-flex: 1;
@@ -428,7 +429,7 @@ header {
   text-align: center;
   position: relative;
   height: 100vh;
-  width: 80%;
+  width: 90%;
 }
 
 .skills__heading {
@@ -491,8 +492,7 @@ header {
 .projects {
   text-align: center;
   position: relative;
-  height: 100vh;
-  width: 80%;
+  width: 90%;
 }
 
 .projects__heading {
@@ -603,4 +603,55 @@ header {
 
 .project__description {
   color: white;
+}
+
+.contact {
+  text-align: center;
+  position: relative;
+  height: 50vh;
+  width: 90%;
+}
+
+.contact__heading {
+  color: white;
+  text-transform: uppercase;
+}
+.contact__heading span {
+  color: #ffb400;
+}
+.contact__heading--bg {
+  font-size: 80px;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.07);
+}
+
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+}
+.contact__container--right {
+  text-align: left;
+}
+.contact__container--right a {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  border-top: 5px solid rgba(255, 255, 255, 0.07);
 }
