@@ -5,16 +5,27 @@ nav {
   z-index: 10;
   height: calc(100vh - 200px);
   top: 100px;
-  background-color: #ffb400;
+  // background-color: #ffb400;
   color: #111;
   .menu__main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    a {
-      padding: 15px 20px;
-      color: #111;
+    gap: 50px;
+    // a {
+    //   padding: 15px 20px;
+    //   color: #111;
+    // }
+    i {
+      display: inline-block;
+      background-color: #ffb400;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      color: white;
+      text-align: center;
+      padding: 10px;
     }
   }
 }
