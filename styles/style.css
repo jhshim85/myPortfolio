@@ -330,34 +330,46 @@ header {
 
 .heading__button {
   border-radius: 35px;
-  border: 1px solid white;
+  border: 1px solid #ffb400;
   padding: 15px 70px 15px 35px;
   position: relative;
-  text-align: center;
+  overflow: hidden;
+}
+.heading__button:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all;
+  border-radius: 35px;
+}
+.heading__button:hover:before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background-color: #ffb400;
 }
 .heading__button--text {
-  position: relative;
+  color: white;
 }
 .heading__button--icon {
   position: absolute;
+  display: inline-block;
   right: -1px;
   top: -1px;
   bottom: 0;
   width: 55px;
   height: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 18px;
   font-size: 19px;
   color: #ffffff;
   border-radius: 50%;
-  background-color: rgba(255, 180, 0, 0.5);
+  background-color: #ffb400;
 }
 
 .about {
