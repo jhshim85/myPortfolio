@@ -30,7 +30,7 @@ header {
     left: 0;
     right: 0;
     transform: translateX(100%);
-    transition: .3s ease-out all;
+    transition: transform 0.3s ease-out;
     border-radius: 35px;
   }
   &:hover:before {

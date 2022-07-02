@@ -282,7 +282,8 @@ nav {
   top: 100px;
   color: #111;
 }
-nav .menu__main {
+
+.menu__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,15 +299,58 @@ nav .menu__main {
           align-items: center;
   gap: 50px;
 }
-nav .menu__main i {
-  display: inline-block;
-  background-color: #ffb400;
-  border-radius: 50%;
+.menu__main li {
   width: 50px;
   height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__main li i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  display: block;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 13px;
+  background-color: #2b2a2a;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.menu__main li a {
+  display: block;
+  height: 50px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+  color: #fff;
+  font-size: 15px;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 15px 70px 15px 35px;
+  background-color: #ffb400;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+.menu__main li:hover a {
+  opacity: 1;
+}
+.menu__main li:hover i {
+  background-color: #ffb400;
 }
 
 header {
@@ -345,8 +389,10 @@ header {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: 0.3s ease-out all;
-  transition: 0.3s ease-out all;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   border-radius: 35px;
 }
 .heading__button:hover:before {
