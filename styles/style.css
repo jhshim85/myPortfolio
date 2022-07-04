@@ -360,7 +360,7 @@ nav {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
 }
 
@@ -427,7 +427,7 @@ header {
 .about {
   text-align: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
 }
 
@@ -493,7 +493,7 @@ header {
 .skills {
   text-align: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
 }
 
@@ -708,7 +708,7 @@ header {
 .contact {
   text-align: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
 }
 
