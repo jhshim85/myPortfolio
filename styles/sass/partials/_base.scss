@@ -11,12 +11,308 @@ img {
   object-fit: cover;
 }
 
-body {
-  background-color: #111;
-}
-
 .link {
   display: block;
   position: relative;
   top: -50px;
+}
+
+.page__theme--dark {
+  background-color: $black;
+  nav {
+    i {
+      color: $white;
+      background-color: $darkGrey;
+    }
+    a {
+      color: $white;
+      background-color: $yellowOrange;
+    }
+    li:hover i {
+      background-color: $yellowOrange;
+    }
+  }
+  header {
+    .heading__greeting {
+      color: $yellowOrange;
+    }
+    .heading__name {
+      color: $yellowOrange;
+    }
+    .heading__occupation {
+      color: $lightGrey;
+    }
+    .heading__intro {
+      color: $white;
+    }
+    .heading__button {
+      border-color: $yellowOrange;
+      &:hover:before {
+        background-color: $yellowOrange;
+      }
+      &--text {
+        color: $white;
+      }
+      &--icon {
+        color: $white;
+        background-color: $yellowOrange;
+      }
+    }
+  }
+  .about {
+    .about__heading {
+      color: $white;
+      span {
+        color: $yellowOrange;
+      }
+      &--bg {
+        color: rgba($color: $white, $alpha: 0.1);
+      }
+    }
+    .about__pic--container {
+      box-shadow: 0 0 10px $yellowOrange;
+    }
+    .about__text--container {
+      .about__text {
+        color: $yellowOrange;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+  .skills {
+    .skills__heading {
+      color: $white;
+      span {
+        color: $yellowOrange;
+      }
+      &--bg {
+        color: rgba($color: $white, $alpha: 0.1);
+      }
+    }
+    .skills__list--tech {
+      li {
+        color: $white;
+        i {
+          color: $yellowOrange;
+        }
+      }
+    }
+  }
+  .projects {
+    .projects__heading {
+      color: $white;
+      span {
+        color: $yellowOrange;
+      }
+      &--bg {
+        color: rgba($color: $white, $alpha: 0.1);
+      }
+    }
+    .project__container--pic {
+      img {
+        box-shadow: 0 0 10px $yellowOrange;
+      }
+      .icon__container {
+        i {
+          color: $white;
+        }
+        i:hover {
+          color: $yellowOrange;
+        }
+      }
+    }
+    .project__container--text {
+      .project__title {
+        color: $yellowOrange;
+        h3 {
+          text-shadow: 5px 5px 5px rgba($color: $white, $alpha: 0.3);
+        }
+      }
+      .project__skill--list {
+        li {
+          color: $white;
+          i {
+            color: $yellowOrange;
+          }
+        }
+      }
+      .project__description {
+        color: $white;
+      }
+    }
+  }
+  .contact {
+    .contact__heading {
+      color: $white;
+      span {
+        color: $yellowOrange;
+      }
+      &--bg {
+        color: rgba($color: $white, $alpha: 0.1);
+      }
+    }
+    .contact__container {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+  footer {
+    color: $white;
+    border-color: $darkGrey;
+  }
+}
+
+
+.page__theme--light {
+  background-color: $white;
+  nav {
+    i {
+      color: $white;
+      background-color: $lightGrey;
+    }
+    a {
+      color: $white;
+      background-color: $lightGreen;
+    }
+    li:hover i {
+      background-color: $lightGreen;
+    }
+  }
+  header {
+    .heading__greeting {
+      color: $lightGreen;
+    }
+    .heading__name {
+      color: $lightGreen;
+    }
+    .heading__occupation
+    {
+      color: $darkGrey;
+    }
+    .heading__intro {
+      color: $lightGrey;
+    }
+    .heading__button {
+      border-color: $lightGreen;
+      &:hover:before {
+        background-color: $lightGreen;
+      }
+      &--text {
+        color: $lightGrey;
+      }
+      &--icon {
+        color: $lightGrey;
+        background-color: $lightGreen;
+      }
+    }
+  }
+  .about {
+    .about__heading {
+      color: $lightGrey;
+      span {
+        color: $lightGreen;
+      }
+      &--bg {
+        color: rgba($color: $lightGrey, $alpha: 0.2);
+      }
+    }
+    .about__pic--container {
+      box-shadow: 0 0 10px $lightGreen;
+    }
+    .about__text--container {
+      .about__text {
+        color: $lightGreen;
+      }
+      p {
+        color: $lightGrey;
+      }
+    }
+  }
+  .skills {
+    .skills__heading {
+      color: $lightGrey;
+      span {
+        color: $lightGreen;
+      }
+      &--bg {
+        color: rgba($color: $lightGrey, $alpha: 0.2);
+      }
+    }
+    .skills__list--tech {
+      li {
+        color: $lightGrey;
+        i {
+          color: $lightGreen;
+        }
+      }
+    }
+  }
+  .projects {
+    .projects__heading {
+      color: $lightGrey;
+      span {
+        color: $lightGreen;
+      }
+      &--bg {
+        color: rgba($color: $lightGrey, $alpha: 0.2);
+      }
+    }
+    .project__container--pic {
+      img {
+        box-shadow: 0 0 10px $lightGreen;
+      }
+      .icon__container {
+        i {
+          color: $lightGrey;
+        }
+        i:hover {
+          color: $lightGreen;
+        }
+      }
+    }
+    .project__container--text {
+      .project__title {
+        color: $lightGreen;
+        h3 {
+          text-shadow: 5px 5px 5px rgba($color: $lightGrey, $alpha: 0.3);
+        }
+      }
+      .project__skill--list {
+        li {
+          color: $lightGrey;
+          i {
+            color: $lightGreen;
+          }
+        }
+      }
+      .project__description {
+        color: $lightGrey;
+      }
+    }
+  }
+  .contact {
+    .contact__heading {
+      color: $lightGrey;
+      span {
+        color: $lightGreen;
+      }
+      &--bg {
+        color: rgba($color: $lightGrey, $alpha: 0.2);
+      }
+    }
+    .contact__container {
+      color: $lightGrey;
+      a {
+        color: $lightGrey;
+      }
+    }
+  }
+  footer {
+    color: $lightGrey;
+    border-color: rgba($color: $lightGrey, $alpha: 0.2);
+  }
 }

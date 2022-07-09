@@ -6,12 +6,12 @@
 }
 
 .contact__heading {
-  color: white;
+  // color: white;
   text-transform: uppercase;
   margin: 100px 0;
-  span {
-    color: #ffb400;
-  }
+  // span {
+  //   color: #ffb400;
+  // }
   &--bg {
     font-size: 80px;
     left: 0;
@@ -23,18 +23,18 @@
     text-transform: uppercase;
     font-weight: 800;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.07);
+    // color: rgba(255, 255, 255, 0.07);
   }
 }
 
 .contact__container {
   display: flex;
   justify-content: space-evenly;
-  color: white;
+  // color: white;
   &--right {
     text-align: left;
-    a {
-      color: white;
-    }
+    // a {
+    //   color: white;
+    // }
   }
 }

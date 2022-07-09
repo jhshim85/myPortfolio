@@ -269,14 +269,264 @@ img {
      object-fit: cover;
 }
 
-body {
-  background-color: #111;
-}
-
 .link {
   display: block;
   position: relative;
   top: -50px;
+}
+
+.page__theme--dark {
+  background-color: #111;
+}
+.page__theme--dark nav i {
+  color: #fff;
+  background-color: #2b2a2a;
+}
+.page__theme--dark nav a {
+  color: #fff;
+  background-color: #ffb400;
+}
+.page__theme--dark nav li:hover i {
+  background-color: #ffb400;
+}
+.page__theme--dark header .heading__greeting {
+  color: #ffb400;
+}
+.page__theme--dark header .heading__name {
+  color: #ffb400;
+}
+.page__theme--dark header .heading__occupation {
+  color: #666;
+}
+.page__theme--dark header .heading__intro {
+  color: #fff;
+}
+.page__theme--dark header .heading__button {
+  border-color: #ffb400;
+}
+.page__theme--dark header .heading__button:hover:before {
+  background-color: #ffb400;
+}
+.page__theme--dark header .heading__button--text {
+  color: #fff;
+}
+.page__theme--dark header .heading__button--icon {
+  color: #fff;
+  background-color: #ffb400;
+}
+.page__theme--dark .about .about__heading {
+  color: #fff;
+}
+.page__theme--dark .about .about__heading span {
+  color: #ffb400;
+}
+.page__theme--dark .about .about__heading--bg {
+  color: rgba(255, 255, 255, 0.1);
+}
+.page__theme--dark .about .about__pic--container {
+  -webkit-box-shadow: 0 0 10px #ffb400;
+          box-shadow: 0 0 10px #ffb400;
+}
+.page__theme--dark .about .about__text--container .about__text {
+  color: #ffb400;
+}
+.page__theme--dark .about .about__text--container p {
+  color: #fff;
+}
+.page__theme--dark .skills .skills__heading {
+  color: #fff;
+}
+.page__theme--dark .skills .skills__heading span {
+  color: #ffb400;
+}
+.page__theme--dark .skills .skills__heading--bg {
+  color: rgba(255, 255, 255, 0.1);
+}
+.page__theme--dark .skills .skills__list--tech li {
+  color: #fff;
+}
+.page__theme--dark .skills .skills__list--tech li i {
+  color: #ffb400;
+}
+.page__theme--dark .projects .projects__heading {
+  color: #fff;
+}
+.page__theme--dark .projects .projects__heading span {
+  color: #ffb400;
+}
+.page__theme--dark .projects .projects__heading--bg {
+  color: rgba(255, 255, 255, 0.1);
+}
+.page__theme--dark .projects .project__container--pic img {
+  -webkit-box-shadow: 0 0 10px #ffb400;
+          box-shadow: 0 0 10px #ffb400;
+}
+.page__theme--dark .projects .project__container--pic .icon__container i {
+  color: #fff;
+}
+.page__theme--dark .projects .project__container--pic .icon__container i:hover {
+  color: #ffb400;
+}
+.page__theme--dark .projects .project__container--text .project__title {
+  color: #ffb400;
+}
+.page__theme--dark .projects .project__container--text .project__title h3 {
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+.page__theme--dark .projects .project__container--text .project__skill--list li {
+  color: #fff;
+}
+.page__theme--dark .projects .project__container--text .project__skill--list li i {
+  color: #ffb400;
+}
+.page__theme--dark .projects .project__container--text .project__description {
+  color: #fff;
+}
+.page__theme--dark .contact .contact__heading {
+  color: #fff;
+}
+.page__theme--dark .contact .contact__heading span {
+  color: #ffb400;
+}
+.page__theme--dark .contact .contact__heading--bg {
+  color: rgba(255, 255, 255, 0.1);
+}
+.page__theme--dark .contact .contact__container {
+  color: #fff;
+}
+.page__theme--dark .contact .contact__container a {
+  color: #fff;
+}
+.page__theme--dark footer {
+  color: #fff;
+  border-color: #2b2a2a;
+}
+
+.page__theme--light {
+  background-color: #fff;
+}
+.page__theme--light nav i {
+  color: #fff;
+  background-color: #666;
+}
+.page__theme--light nav a {
+  color: #fff;
+  background-color: #72b626;
+}
+.page__theme--light nav li:hover i {
+  background-color: #72b626;
+}
+.page__theme--light header .heading__greeting {
+  color: #72b626;
+}
+.page__theme--light header .heading__name {
+  color: #72b626;
+}
+.page__theme--light header .heading__occupation {
+  color: #2b2a2a;
+}
+.page__theme--light header .heading__intro {
+  color: #666;
+}
+.page__theme--light header .heading__button {
+  border-color: #72b626;
+}
+.page__theme--light header .heading__button:hover:before {
+  background-color: #72b626;
+}
+.page__theme--light header .heading__button--text {
+  color: #666;
+}
+.page__theme--light header .heading__button--icon {
+  color: #666;
+  background-color: #72b626;
+}
+.page__theme--light .about .about__heading {
+  color: #666;
+}
+.page__theme--light .about .about__heading span {
+  color: #72b626;
+}
+.page__theme--light .about .about__heading--bg {
+  color: rgba(102, 102, 102, 0.2);
+}
+.page__theme--light .about .about__pic--container {
+  -webkit-box-shadow: 0 0 10px #72b626;
+          box-shadow: 0 0 10px #72b626;
+}
+.page__theme--light .about .about__text--container .about__text {
+  color: #72b626;
+}
+.page__theme--light .about .about__text--container p {
+  color: #666;
+}
+.page__theme--light .skills .skills__heading {
+  color: #666;
+}
+.page__theme--light .skills .skills__heading span {
+  color: #72b626;
+}
+.page__theme--light .skills .skills__heading--bg {
+  color: rgba(102, 102, 102, 0.2);
+}
+.page__theme--light .skills .skills__list--tech li {
+  color: #666;
+}
+.page__theme--light .skills .skills__list--tech li i {
+  color: #72b626;
+}
+.page__theme--light .projects .projects__heading {
+  color: #666;
+}
+.page__theme--light .projects .projects__heading span {
+  color: #72b626;
+}
+.page__theme--light .projects .projects__heading--bg {
+  color: rgba(102, 102, 102, 0.2);
+}
+.page__theme--light .projects .project__container--pic img {
+  -webkit-box-shadow: 0 0 10px #72b626;
+          box-shadow: 0 0 10px #72b626;
+}
+.page__theme--light .projects .project__container--pic .icon__container i {
+  color: #666;
+}
+.page__theme--light .projects .project__container--pic .icon__container i:hover {
+  color: #72b626;
+}
+.page__theme--light .projects .project__container--text .project__title {
+  color: #72b626;
+}
+.page__theme--light .projects .project__container--text .project__title h3 {
+  text-shadow: 5px 5px 5px rgba(102, 102, 102, 0.3);
+}
+.page__theme--light .projects .project__container--text .project__skill--list li {
+  color: #666;
+}
+.page__theme--light .projects .project__container--text .project__skill--list li i {
+  color: #72b626;
+}
+.page__theme--light .projects .project__container--text .project__description {
+  color: #666;
+}
+.page__theme--light .contact .contact__heading {
+  color: #666;
+}
+.page__theme--light .contact .contact__heading span {
+  color: #72b626;
+}
+.page__theme--light .contact .contact__heading--bg {
+  color: rgba(102, 102, 102, 0.2);
+}
+.page__theme--light .contact .contact__container {
+  color: #666;
+}
+.page__theme--light .contact .contact__container a {
+  color: #666;
+}
+.page__theme--light footer {
+  color: #666;
+  border-color: rgba(102, 102, 102, 0.2);
 }
 
 nav {
@@ -286,7 +536,6 @@ nav {
   z-index: 10;
   height: calc(100vh - 200px);
   top: 100px;
-  color: #111;
 }
 
 .menu__main {
@@ -328,10 +577,8 @@ nav {
   width: 50px;
   height: 50px;
   display: block;
-  color: white;
   text-align: center;
-  padding: 13px;
-  background-color: #2b2a2a;
+  padding: 14px;
   border-radius: 50%;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
@@ -342,21 +589,16 @@ nav {
   z-index: -1;
   position: absolute;
   opacity: 0;
-  color: #fff;
   font-size: 15px;
   top: 0;
   right: 0;
   border-radius: 35px;
-  padding: 15px 70px 15px 35px;
-  background-color: #ffb400;
+  padding: 18px 70px 18px 35px;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 .menu__main li:hover a {
   opacity: 1;
-}
-.menu__main li:hover i {
-  background-color: #ffb400;
 }
 
 header {
@@ -366,21 +608,11 @@ header {
 
 .heading__greeting {
   display: inline-block;
-  color: #ffb400;
-}
-
-.heading__name {
-  color: #ffb400;
-}
-
-.heading__occupation,
-.heading__intro {
-  color: white;
 }
 
 .heading__button {
   border-radius: 35px;
-  border: 1px solid #ffb400;
+  border: 1px solid;
   padding: 15px 70px 15px 35px;
   position: relative;
   overflow: hidden;
@@ -404,10 +636,6 @@ header {
 .heading__button:hover:before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  background-color: #ffb400;
-}
-.heading__button--text {
-  color: white;
 }
 .heading__button--icon {
   position: absolute;
@@ -419,9 +647,7 @@ header {
   height: 55px;
   padding: 18px;
   font-size: 19px;
-  color: #ffffff;
   border-radius: 50%;
-  background-color: #ffb400;
 }
 
 .about {
@@ -432,12 +658,8 @@ header {
 }
 
 .about__heading {
-  color: white;
   text-transform: uppercase;
   margin: 100px 0;
-}
-.about__heading span {
-  color: #ffb400;
 }
 .about__heading--bg {
   font-size: 80px;
@@ -451,7 +673,6 @@ header {
   font-weight: 800;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.07);
 }
 
 .about__container {
@@ -472,8 +693,6 @@ header {
   background: url(../assets/IMG_4611.jpg) top right/cover no-repeat;
   height: calc(90vh - 100px);
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 10px #ffb400;
-          box-shadow: 0 0 10px #ffb400;
   z-index: 111;
   min-width: 350px;
 }
@@ -482,12 +701,6 @@ header {
       -ms-flex: 1 0 calc(45% - 10px);
           flex: 1 0 calc(45% - 10px);
   text-align: left;
-}
-.about__container .about__text--container .about__text {
-  color: #ffb400;
-}
-.about__container .about__text--container p {
-  color: white;
 }
 
 .skills {
@@ -498,12 +711,8 @@ header {
 }
 
 .skills__heading {
-  color: white;
   text-transform: uppercase;
   margin: 100px 0;
-}
-.skills__heading span {
-  color: #ffb400;
 }
 .skills__heading--bg {
   font-size: 80px;
@@ -517,7 +726,6 @@ header {
   font-weight: 800;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.07);
 }
 
 .skills__list--tech {
@@ -545,13 +753,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
   font-size: 25px;
   margin-top: 50px;
   gap: 10px;
 }
 .skills__list--tech li i {
-  color: #ffb400;
   font-size: 50px;
 }
 
@@ -563,12 +769,8 @@ header {
 }
 
 .projects__heading {
-  color: white;
   text-transform: uppercase;
   margin: 100px 0;
-}
-.projects__heading span {
-  color: #ffb400;
 }
 .projects__heading--bg {
   font-size: 80px;
@@ -582,7 +784,6 @@ header {
   font-weight: 800;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.07);
 }
 
 .projects__list {
@@ -614,8 +815,6 @@ header {
   height: 300px;
   opacity: 1;
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 10px #ffb400;
-          box-shadow: 0 0 10px #ffb400;
 }
 .project__container--pic .icon__container {
   display: -webkit-box;
@@ -636,11 +835,7 @@ header {
   opacity: 0;
 }
 .project__container--pic .icon__container i {
-  color: white;
   font-size: 3rem;
-}
-.project__container--pic .icon__container i:hover {
-  color: #ffb400;
 }
 .project__container--pic:hover .icon__container {
   opacity: 1;
@@ -665,7 +860,6 @@ header {
 }
 
 .project__title {
-  color: #ffb400;
   -ms-flex-item-align: center;
       align-self: center;
   width: 100%;
@@ -673,7 +867,6 @@ header {
 .project__title h3 {
   margin-bottom: 0;
   text-transform: uppercase;
-  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
 }
 
 .project__skill--list {
@@ -694,15 +887,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: white;
 }
 .project__skill--list li i {
-  color: #ffb400;
   font-size: 1.5rem;
-}
-
-.project__description {
-  color: white;
 }
 
 .contact {
@@ -713,12 +900,8 @@ header {
 }
 
 .contact__heading {
-  color: white;
   text-transform: uppercase;
   margin: 100px 0;
-}
-.contact__heading span {
-  color: #ffb400;
 }
 .contact__heading--bg {
   font-size: 80px;
@@ -732,7 +915,6 @@ header {
   font-weight: 800;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.07);
 }
 
 .contact__container {
@@ -742,17 +924,12 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: white;
 }
 .contact__container--right {
   text-align: left;
 }
-.contact__container--right a {
-  color: white;
-}
 
 footer {
   text-align: center;
-  color: white;
-  border-top: 5px solid rgba(255, 255, 255, 0.07);
+  border-top: 5px solid;
 }

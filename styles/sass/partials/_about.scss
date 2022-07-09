@@ -6,12 +6,12 @@
 }
 
 .about__heading {
-  color: white;
+  // color: white;
   text-transform: uppercase;
   margin: 100px 0;
-  span {
-    color: #ffb400;
-  }
+  // span {
+  //   color: #ffb400;
+  // }
   &--bg {
     font-size: 80px;
     left: 0;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     font-weight: 800;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.07);
+    // color: rgba(255, 255, 255, 0.07);
   }
 }
 
@@ -38,7 +38,7 @@
     background: url(../assets/IMG_4611.jpg) top right / cover no-repeat;
     height: calc(90vh - 100px);
     border-radius: 30px;
-    box-shadow: 0 0 10px #ffb400;
+    // box-shadow: 0 0 10px #ffb400;
     z-index: 111;
     min-width: 350px;
     // position: relative;
@@ -66,11 +66,11 @@
     flex: 1 0 calc(45% - 10px);
     // margin-right: 150px;
     text-align: left;
-    .about__text {
-      color: #ffb400;
-    }
-    p {
-      color: white;
-    }
+    // .about__text {
+    //   color: #ffb400;
+    // }
+    // p {
+    //   color: white;
+    // }
   }
 }

@@ -6,12 +6,12 @@
 }
 
 .skills__heading {
-  color: white;
+  // color: white;
   text-transform: uppercase;
   margin: 100px 0;
-  span {
-    color: #ffb400;
-  }
+  // span {
+  //   color: #ffb400;
+  // }
   &--bg {
     font-size: 80px;
     left: 0;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     font-weight: 800;
     transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.07);
+    // color: rgba(255, 255, 255, 0.07);
   }
 }
 
@@ -37,12 +37,12 @@
     flex: 1 0 calc(100% / 4 - 10px);
     display: flex;
     flex-direction: column;
-    color: white;
+    // color: white;
     font-size: 25px;
     margin-top: 50px;
     gap: 10px;
     i {
-      color: #ffb400;
+      // color: #ffb400;
       font-size: 50px;
     }
   }

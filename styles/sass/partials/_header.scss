@@ -5,19 +5,19 @@ header {
 
 .heading__greeting {
   display: inline-block;
-  color: #ffb400;
+  // color: #ffb400;
 }
-.heading__name {
-  color: #ffb400;
-}
-.heading__occupation,
-.heading__intro {
-  color: white;
-}
+// .heading__name {
+//   color: #ffb400;
+// }
+// .heading__occupation,
+// .heading__intro {
+//   color: white;
+// }
 
 .heading__button {
   border-radius: 35px;
-  border: 1px solid #ffb400;
+  border: 1px solid;
   padding: 15px 70px 15px 35px;
   position: relative;
   overflow: hidden;
@@ -35,11 +35,11 @@ header {
   }
   &:hover:before {
     transform: translateX(0);
-    background-color: #ffb400;
+    // background-color: #ffb400;
   }
-  &--text {
-    color: white;
-  }
+  // &--text {
+  //   color: white;
+  // }
   &--icon {
     position: absolute;
     display: inline-block;
@@ -50,8 +50,8 @@ header {
     height: 55px;
     padding: 18px;
     font-size: 19px;
-    color: #ffffff;
+    // color: #ffffff;
     border-radius: 50%;
-    background-color: #ffb400;
+    // background-color: #ffb400;
   }
 }
