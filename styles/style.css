@@ -278,11 +278,22 @@ img {
 .page__theme--dark {
   background-color: #111;
 }
+.page__theme--dark nav .theme__type {
+  border-color: #ffb400;
+}
+.page__theme--dark nav .theme__type:before {
+  content: "LIGHT";
+  color: #ffb400;
+}
+.page__theme--dark nav .theme__type:hover {
+  -webkit-box-shadow: 0 0 10px #ffb400;
+          box-shadow: 0 0 10px #ffb400;
+}
 .page__theme--dark nav i {
   color: #fff;
   background-color: #2b2a2a;
 }
-.page__theme--dark nav a {
+.page__theme--dark nav h4 {
   color: #fff;
   background-color: #ffb400;
 }
@@ -405,11 +416,22 @@ img {
 .page__theme--light {
   background-color: #fff;
 }
+.page__theme--light nav .theme__type {
+  border-color: #72b626;
+}
+.page__theme--light nav .theme__type:before {
+  content: "DARK";
+  color: #72b626;
+}
+.page__theme--light nav .theme__type:hover {
+  -webkit-box-shadow: 0 0 10px #72b626;
+          box-shadow: 0 0 10px #72b626;
+}
 .page__theme--light nav i {
   color: #fff;
   background-color: #666;
 }
-.page__theme--light nav a {
+.page__theme--light nav h4 {
   color: #fff;
   background-color: #72b626;
 }
@@ -535,7 +557,26 @@ nav {
   bottom: 0;
   z-index: 10;
   height: calc(100vh - 200px);
-  top: 100px;
+  top: 10px;
+}
+
+.theme__type {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-bottom: 50px;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+  cursor: pointer;
+}
+.theme__type:before {
+  text-align: center;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px;
 }
 
 .menu__main {
@@ -568,6 +609,21 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
+.menu__main li h4 {
+  display: block;
+  height: 50px;
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  font-size: 15px;
+  top: 0;
+  right: 0;
+  border-radius: 35px;
+  padding: 18px 70px 18px 35px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
 .menu__main li i {
   position: absolute;
   left: 0;
@@ -583,21 +639,7 @@ nav {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-.menu__main li a {
-  display: block;
-  height: 50px;
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-  font-size: 15px;
-  top: 0;
-  right: 0;
-  border-radius: 35px;
-  padding: 18px 70px 18px 35px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-}
-.menu__main li:hover a {
+.menu__main li:hover h4 {
   opacity: 1;
 }
 

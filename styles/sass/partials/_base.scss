@@ -20,11 +20,21 @@ img {
 .page__theme--dark {
   background-color: $black;
   nav {
+    .theme__type {
+      border-color: $yellowOrange;
+      &:before {
+        content: 'LIGHT';
+        color: $yellowOrange;
+      }
+      &:hover {
+        box-shadow: 0 0 10px $yellowOrange;
+      }
+    }
     i {
       color: $white;
       background-color: $darkGrey;
     }
-    a {
+    h4 {
       color: $white;
       background-color: $yellowOrange;
     }
@@ -170,11 +180,21 @@ img {
 .page__theme--light {
   background-color: $white;
   nav {
+    .theme__type {
+      border-color: $lightGreen;
+      &:before {
+        content: 'DARK';
+        color: $lightGreen;
+      }
+      &:hover {
+        box-shadow: 0 0 10px $lightGreen;
+      }
+    }
     i {
       color: $white;
       background-color: $lightGrey;
     }
-    a {
+    h4 {
       color: $white;
       background-color: $lightGreen;
     }

@@ -1,5 +1,5 @@
 const pageBody = document.querySelector('body');
-const theme = document.querySelector('.theme__type--dark');
+const theme = document.querySelector('.theme__type');
 
 function pageMode() {
   pageBody.classList.toggle('page__theme--light');

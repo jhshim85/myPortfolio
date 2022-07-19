@@ -17,39 +17,49 @@
 </head>
 <body class="page__theme--dark">
   <nav>
+    <form action="submit">
+      <legend class="sr-only">Choose either dark or light theme</legend>
+        <label for="dark" class="sr-only">DARK MODE</label>
+        <input type="checkbox" name="theme__type" value="dark" id="dark" class="theme__type" checked>
+        <!-- <label for="light">LIGHT</label>
+        <input type="checkbox" name="theme__type" value="light" id="light" class="theme__type--light"> -->
+    </form>
+
     <ul class="menu__main">
       <li>
-        <a href="./index.html#home">Home</a>
-        <i class="fa fa-home"></i>
+        <a href="./index.html#home">
+          <h4>Home</h4>
+          <i class="fa fa-home"></i>
+        </a>
+        
       </li>
       <li>
-        <a href="./index.html#about">About</a>
-        <i class="fa fa-user"></i>
+        <a href="./index.html#about">
+          <h4>About</h4>
+          <i class="fa fa-user"></i>
+        </a>
       </li>
       <li>
-        <a href="./index.html#skills">Skill</a>
-        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <a href="./index.html#skills">
+          <h4>Skill</h4>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </a>
       </li>
       <li>
-        <a href="./index.html#projects">Project</a>
-        <i class="fa-solid fa-panorama"></i>
+        <a href="./index.html#projects">
+          <h4>Project</h4>
+          <i class="fa-solid fa-panorama"></i>
+        </a>
       </li>
       <li>
-        <a href="./index.html#contact">Contact</a>
-        <i class="fa fa-envelope-open"></i>
+        <a href="./index.html#contact">
+          <h4>Contact</h4>
+          <i class="fa fa-envelope-open"></i>
+        </a>
       </li>
     </ul>
   </nav>
 
-  <form action="submit">
-    <fieldset class="theme__type">
-      <legend class="sr-only">Choose either dark or light theme</legend>
-        <label for="dark" class="sr-only">DARK MODE</label>
-        <input type="checkbox" name="theme__type" value="dark" id="dark" class="theme__type--dark" checked>
-        <!-- <label for="light">LIGHT</label>
-        <input type="checkbox" name="theme__type" value="light" id="light" class="theme__type--light"> -->
-    </fieldset>
-  </form>
   
   <header id="home">
     <div class="wrapper">

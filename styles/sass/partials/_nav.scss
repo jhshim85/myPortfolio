@@ -4,9 +4,28 @@ nav {
   bottom: 0;
   z-index: 10;
   height: calc(100vh - 200px);
-  top: 100px;
+  top: 10px;
   // color: #111;
 }
+
+.theme__type {
+  appearance: none;
+  margin-bottom: 50px;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid;
+  // pointer-events: none;
+  cursor: pointer;
+  &:before {
+    text-align: center;
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px;
+  }
+}
+
 
 .menu__main{
   display: flex;
@@ -21,6 +40,20 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    h4 {
+      display: block;
+      height: 50px;
+      z-index: -1;
+      position: absolute;
+      opacity: 0;
+      margin: 0;
+      font-size: 15px;
+      top: 0;
+      right: 0;
+      border-radius: 35px;
+      padding: 18px 70px 18px 35px;
+      transition: opacity 0.3s ease-in-out;
+    }
     i {
       position: absolute;
       left: 0;
@@ -37,27 +70,9 @@ nav {
       border-radius: 50%;
       transition: background-color 0.2s ease-in-out;
     }
-    a {
-      display: block;
-      height: 50px;
-      z-index: -1;
-      position: absolute;
-      opacity: 0;
-      // color: #fff;
-      font-size: 15px;
-      top: 0;
-      right: 0;
-      border-radius: 35px;
-      padding: 18px 70px 18px 35px;
-      // background-color: #ffb400;
-      transition: opacity 0.3s ease-in-out;
-    }
   }
-  li:hover a{
+  li:hover h4{
     opacity: 1;
   }
-  // li:hover i {
-  //   background-color: #ffb400;
-  // }
 }
 
