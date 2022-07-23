@@ -5,7 +5,6 @@ nav {
   z-index: 10;
   height: calc(100vh - 200px);
   top: 10px;
-  // color: #111;
 }
 
 .theme__type {
@@ -15,7 +14,6 @@ nav {
   height: 20px;
   border-radius: 10px;
   border: 2px solid;
-  // pointer-events: none;
   cursor: pointer;
   &:before {
     text-align: center;
@@ -25,7 +23,6 @@ nav {
     padding: 3px;
   }
 }
-
 
 .menu__main{
   display: flex;
@@ -63,15 +60,14 @@ nav {
       width: 50px;
       height: 50px;
       display: block;
-      // color: white;
       text-align: center;
       padding: 14px;
-      // background-color: #2b2a2a;
       border-radius: 50%;
       transition: background-color 0.2s ease-in-out;
     }
   }
-  li:hover h4{
+  li:hover h4,
+  li:focus h4 {
     opacity: 1;
   }
 }

@@ -334,15 +334,18 @@ img {
 .page__theme--dark .about .about__heading--bg {
   color: rgba(255, 255, 255, 0.1);
 }
-.page__theme--dark .about .about__pic--container {
+.page__theme--dark .about .about__pic--container img {
   -webkit-box-shadow: 0 0 10px #ffb400;
           box-shadow: 0 0 10px #ffb400;
 }
-.page__theme--dark .about .about__text--container .about__text {
+.page__theme--dark .about .about__text--container .about__text--title {
   color: #ffb400;
 }
-.page__theme--dark .about .about__text--container p {
+.page__theme--dark .about .about__text--container .about__text--content {
   color: #fff;
+}
+.page__theme--dark .about .about__text--container .about__text--content em {
+  color: #ffb400;
 }
 .page__theme--dark .skills .skills__heading {
   color: #fff;
@@ -357,6 +360,9 @@ img {
   color: #fff;
 }
 .page__theme--dark .skills .skills__list--tech li i {
+  color: #ffb400;
+}
+.page__theme--dark .skills .skills__list--tech .upcoming__skill--text {
   color: #ffb400;
 }
 .page__theme--dark .projects .projects__heading {
@@ -472,15 +478,18 @@ img {
 .page__theme--light .about .about__heading--bg {
   color: rgba(102, 102, 102, 0.2);
 }
-.page__theme--light .about .about__pic--container {
+.page__theme--light .about .about__pic--container img {
   -webkit-box-shadow: 0 0 10px #72b626;
           box-shadow: 0 0 10px #72b626;
 }
-.page__theme--light .about .about__text--container .about__text {
+.page__theme--light .about .about__text--container .about__text--title {
   color: #72b626;
 }
-.page__theme--light .about .about__text--container p {
+.page__theme--light .about .about__text--container .about__text--content {
   color: #666;
+}
+.page__theme--light .about .about__text--container .about__text--content em {
+  color: #72b626;
 }
 .page__theme--light .skills .skills__heading {
   color: #666;
@@ -495,6 +504,9 @@ img {
   color: #666;
 }
 .page__theme--light .skills .skills__list--tech li i {
+  color: #72b626;
+}
+.page__theme--light .skills .skills__list--tech .upcoming__skill--text {
   color: #72b626;
 }
 .page__theme--light .projects .projects__heading {
@@ -639,23 +651,56 @@ nav {
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
-.menu__main li:hover h4 {
+.menu__main li:hover h4,
+.menu__main li:focus h4 {
   opacity: 1;
 }
 
 header {
   min-height: 100vh;
-  width: 90%;
 }
 
-.heading__greeting {
-  display: inline-block;
+.heading__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.heading__container .heading__greeting {
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: 1.1rem;
+  margin: 100px 0 50px 0;
+}
+.heading__container .heading__name {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.3rem;
+}
+.heading__container .heading__occupation {
+  text-transform: uppercase;
+}
+.heading__container .heading__intro {
+  font-size: 1.25rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.02rem;
 }
 
 .heading__button {
   border-radius: 35px;
   border: 1px solid;
   padding: 15px 70px 15px 35px;
+  margin: 25px 0;
+  font-weight: bold;
   position: relative;
   overflow: hidden;
 }
@@ -696,18 +741,18 @@ header {
   text-align: center;
   position: relative;
   min-height: 100vh;
-  width: 90%;
 }
 
 .about__heading {
   text-transform: uppercase;
   margin: 100px 0;
+  font-size: 1.8rem;
 }
 .about__heading--bg {
-  font-size: 80px;
+  font-size: 4rem;
   left: 0;
-  letter-spacing: 5px;
-  line-height: 0.7;
+  letter-spacing: 0.2rem;
+  line-height: 0.7rem;
   position: absolute;
   right: 0;
   top: 10px;
@@ -723,44 +768,56 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 100px;
 }
 .about__container .about__pic--container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(35% - 10px);
-          flex: 1 0 calc(35% - 10px);
-  background: url(../assets/IMG_4611.jpg) top right/cover no-repeat;
-  height: calc(90vh - 100px);
+      -ms-flex: 1 0 calc(35% - 100px);
+          flex: 1 0 calc(35% - 100px);
+}
+.about__container .about__pic--container img {
   border-radius: 30px;
   z-index: 111;
-  min-width: 350px;
 }
 .about__container .about__text--container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(45% - 10px);
-          flex: 1 0 calc(45% - 10px);
+      -ms-flex: 1 0 calc(65% - 100px);
+          flex: 1 0 calc(65% - 100px);
   text-align: left;
+}
+.about__container .about__text--container .about__text--title {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 25px;
+}
+.about__container .about__text--container .about__text--content {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+}
+.about__container .about__text--container .about__text--content em {
+  font-weight: bolder;
 }
 
 .skills {
   text-align: center;
   position: relative;
   min-height: 100vh;
-  width: 90%;
 }
 
 .skills__heading {
   text-transform: uppercase;
   margin: 100px 0;
+  font-size: 1.8rem;
 }
 .skills__heading--bg {
-  font-size: 80px;
+  font-size: 4rem;
   left: 0;
-  letter-spacing: 5px;
-  line-height: 0.7;
+  letter-spacing: 0.2rem;
+  line-height: 0.7rem;
   position: absolute;
   right: 0;
   top: 10px;
@@ -771,23 +828,14 @@ header {
 }
 
 .skills__list--tech {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 200px));
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  grid-gap: 10px;
 }
 .skills__list--tech li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 calc(25% - 10px);
-          flex: 1 0 calc(25% - 10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,30 +843,49 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 25px;
   margin-top: 50px;
   gap: 10px;
 }
 .skills__list--tech li i {
   font-size: 50px;
 }
+.skills__list--tech li p {
+  font-size: 1.1rem;
+}
+.skills__list--tech .upcoming__skill {
+  position: relative;
+}
+.skills__list--tech .upcoming__skill .upcoming__skill--icon,
+.skills__list--tech .upcoming__skill .upcoming__skill--type {
+  opacity: 0.3;
+}
+.skills__list--tech .upcoming__skill .upcoming__skill--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
 
 .projects {
   text-align: center;
   position: relative;
   min-height: 100vh;
-  width: 90%;
 }
 
 .projects__heading {
   text-transform: uppercase;
   margin: 100px 0;
+  font-size: 1.8rem;
 }
 .projects__heading--bg {
-  font-size: 80px;
+  font-size: 4rem;
   left: 0;
-  letter-spacing: 5px;
-  line-height: 0.7;
+  letter-spacing: 0.2rem;
+  line-height: 0.7rem;
   position: absolute;
   right: 0;
   top: 10px;
@@ -938,18 +1005,18 @@ header {
   text-align: center;
   position: relative;
   min-height: 100vh;
-  width: 90%;
 }
 
 .contact__heading {
   text-transform: uppercase;
   margin: 100px 0;
+  font-size: 1.8rem;
 }
 .contact__heading--bg {
-  font-size: 80px;
+  font-size: 4rem;
   left: 0;
-  letter-spacing: 5px;
-  line-height: 0.7;
+  letter-spacing: 0.2rem;
+  line-height: 0.7rem;
   position: absolute;
   right: 0;
   top: 10px;

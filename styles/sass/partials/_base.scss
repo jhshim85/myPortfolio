@@ -80,14 +80,19 @@ img {
       }
     }
     .about__pic--container {
-      box-shadow: 0 0 10px $yellowOrange;
+      img {
+        box-shadow: 0 0 10px $yellowOrange;
+      }
     }
     .about__text--container {
-      .about__text {
+      .about__text--title {
         color: $yellowOrange;
       }
-      p {
+      .about__text--content {
         color: $white;
+        em {
+          color: $yellowOrange;
+        }
       }
     }
   }
@@ -107,6 +112,9 @@ img {
         i {
           color: $yellowOrange;
         }
+      }
+      .upcoming__skill--text {
+        color: $yellowOrange;
       }
     }
   }
@@ -241,14 +249,19 @@ img {
       }
     }
     .about__pic--container {
-      box-shadow: 0 0 10px $lightGreen;
+      img {
+        box-shadow: 0 0 10px $lightGreen;
+      }
     }
     .about__text--container {
-      .about__text {
+      .about__text--title {
         color: $lightGreen;
       }
-      p {
+      .about__text--content {
         color: $lightGrey;
+        em {
+          color: $lightGreen;
+        }
       }
     }
   }
@@ -268,6 +281,9 @@ img {
         i {
           color: $lightGreen;
         }
+      }
+      .upcoming__skill--text {
+        color: $lightGreen;
       }
     }
   }
