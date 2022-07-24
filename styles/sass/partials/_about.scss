@@ -28,10 +28,10 @@
   // justify-content: center;
   // gap: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(45% - 100px), 450px));
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(calc(45% - 50px), 450px));
+  justify-content: space-around;
   align-items: center;
-  grid-gap: 100px;
+  grid-gap: 50px;
   .about__pic--container {
     // flex: 1 0 calc(40% - 30px);
     place-self: center;

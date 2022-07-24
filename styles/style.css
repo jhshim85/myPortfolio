@@ -764,14 +764,13 @@ header {
 
 .about__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(45% - 100px), 450px));
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(calc(45% - 50px), 450px));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-gap: 100px;
+  grid-gap: 50px;
 }
 .about__container .about__pic--container {
   place-self: center;
@@ -825,7 +824,7 @@ header {
 
 .skills__list--tech {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 200px));
+  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 220px));
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
