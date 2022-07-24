@@ -23,21 +23,26 @@
 }
 
 .about__container {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(45% - 100px), 450px));
   justify-content: center;
-  gap: 100px;
+  align-items: center;
+  grid-gap: 100px;
   .about__pic--container {
-    flex: 1 0 calc(35% - 100px);
+    // flex: 1 0 calc(40% - 30px);
+    place-self: center;
     img{
-      // height: calc(100vh - 250px);
       border-radius: 30px;
       z-index: 111;
-      // width: 350px;
     }
   }
   .about__text--container {
-    flex: 1 0 calc(65% - 100px);
+    // flex: 1 0 calc(55% - 50px);
+    place-self: center;
     text-align: left;
     .about__text--title {
       font-size: 1.5rem;
