@@ -176,6 +176,9 @@ img {
     }
     .contact__container {
       color: $white;
+      h4, i {
+        color: $yellowOrange;
+      }
       a {
         color: $white;
       }
@@ -348,6 +351,9 @@ img {
     }
     .contact__container {
       color: $lightGrey;
+      h4, i {
+        color: $lightGreen;
+      }
       a {
         color: $lightGrey;
       }

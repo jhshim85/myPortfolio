@@ -414,6 +414,9 @@ img {
 .page__theme--dark .contact .contact__container {
   color: #fff;
 }
+.page__theme--dark .contact .contact__container h4, .page__theme--dark .contact .contact__container i {
+  color: #ffb400;
+}
 .page__theme--dark .contact .contact__container a {
   color: #fff;
 }
@@ -560,6 +563,9 @@ img {
 }
 .page__theme--light .contact .contact__container {
   color: #666;
+}
+.page__theme--light .contact .contact__container h4, .page__theme--light .contact .contact__container i {
+  color: #72b626;
 }
 .page__theme--light .contact .contact__container a {
   color: #666;
@@ -1013,7 +1019,7 @@ header {
 .contact {
   text-align: center;
   position: relative;
-  min-height: 100vh;
+  margin-bottom: 100px;
 }
 
 .contact__heading {
@@ -1039,12 +1045,59 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.contact__container--left {
+  text-align: left;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__container--left h4 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0;
+}
+.contact__container--left p {
+  margin: 0;
+}
+.contact__container--left address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+.contact__container--right {
+  text-align: center;
+  -ms-flex-preferred-size: 54%;
+      flex-basis: 54%;
+}
+.contact__container--right ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  grid-gap: 10px;
 }
-.contact__container--right {
-  text-align: left;
+.contact__container--right a {
+  text-transform: none;
+}
+.contact__container--right a i {
+  font-size: 2.5rem;
 }
 
 footer {
