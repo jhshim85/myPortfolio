@@ -1110,7 +1110,7 @@ footer {
     width: 80%;
   }
 }
-@media (max-width: 369px) {
+@media (max-width: 390px) {
   .skills__list--tech {
     grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 100px));
   }
