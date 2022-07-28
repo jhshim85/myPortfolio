@@ -24,7 +24,7 @@ header {
   .heading__intro {
     font-size: 1.25rem;
     line-height: 2.2rem;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.05rem;
   }
 }
 
@@ -51,6 +51,9 @@ header {
   &:hover:before {
     transform: translateX(0);
   }
+  &--text {
+    font-size: 1.1rem;
+  }
   &--icon {
     position: absolute;
     display: inline-block;
@@ -60,7 +63,7 @@ header {
     width: 55px;
     height: 55px;
     padding: 18px;
-    font-size: 19px;
+    font-size: 1.1rem;
     border-radius: 50%;
   }
 }
