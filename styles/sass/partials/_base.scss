@@ -48,6 +48,10 @@ img {
         box-shadow: 0 0 10px $yellowOrange;
       }
     }
+    .menu__slide {
+      color: $yellowOrange;
+      border: 2px solid $yellowOrange;
+    }
     i {
       color: $white;
       background-color: $darkGrey;
@@ -194,6 +198,10 @@ img {
       &:hover {
         box-shadow: 0 0 10px $lightGreen;
       }
+    }
+    .menu__slide {
+      color: $lightGreen;
+      border: 2px solid $lightGreen;
     }
     i {
       color: $white;
