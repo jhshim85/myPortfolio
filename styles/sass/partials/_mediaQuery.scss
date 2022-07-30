@@ -26,6 +26,10 @@
   .menu__slide {
     display: block;
   }
+  .menu__slide--clicked {
+    opacity: 1;
+    top: 0;
+  }
   .heading__container {
     .heading__greeting {
       font-size: 4rem;

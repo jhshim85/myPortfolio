@@ -11,9 +11,10 @@ theme.addEventListener('click', pageMode);
 
 // sliding menu
 const menuLogo = document.querySelector('.menu__slide');
-const menuBar = document.querySelector('.menu__main');
+const menuBar = document.querySelector('.menu__slide--bar');
+
 function menuClick() {
-  menuBar.classList.toggle('menu__main');
-  menuBar.classList.toggle('menu__slide--bar');
+  menuBar.classList.toggle('menu__slide--clicked');
 }
+
 menuLogo.addEventListener('click', menuClick);

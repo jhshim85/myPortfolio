@@ -582,14 +582,14 @@ nav {
   border-radius: 25%;
   padding: 10px;
   margin-top: 0px;
+  margin-bottom: 5px;
   cursor: pointer;
   font-weight: bolder;
 }
 
 .menu__slide--bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  z-index: 10;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -600,56 +600,30 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 40px;
-}
-.menu__slide--bar li {
-  width: 25px;
-  height: 25px;
-  position: relative;
+  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.menu__slide--bar li h4 {
-  display: block;
-  height: 25px;
-  z-index: -1;
-  position: absolute;
   opacity: 0;
-  margin: 0;
-  font-size: 0.7rem;
-  top: 0;
-  right: -10px;
-  border-radius: 25px;
-  padding: 11px 45px 25px 15px;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+  top: -70%;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
-.menu__slide--bar li i {
-  position: absolute;
-  left: -6px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 36px;
-  height: 36px;
+.menu__slide--bar i {
+  width: 45px;
+  height: 45px;
   display: block;
   text-align: center;
-  padding: 9px;
-  border-radius: 50%;
+  padding: 12px 10px 10px 10px;
+  border-radius: 25%;
   -webkit-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
-.menu__slide--bar li:hover h4,
-.menu__slide--bar li:focus h4 {
-  opacity: 1;
+
+.menu__slide--clicked {
+  opacity: 0;
+  top: -70%;
 }
 
 .menu__main {
@@ -1130,6 +1104,10 @@ footer {
   }
   .menu__slide {
     display: block;
+  }
+  .menu__slide--clicked {
+    opacity: 1;
+    top: 0;
   }
   .heading__container .heading__greeting {
     font-size: 4rem;
