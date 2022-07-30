@@ -44,7 +44,7 @@ nav {
   gap: 5px;
   display: flex;
   opacity: 0;
-  top: -70%;
+  top: -125%;
   transition: opacity 0.2s ease-in-out;
   i {
     width: 45px;
@@ -60,7 +60,7 @@ nav {
 
 .menu__slide--clicked {
   opacity: 0;
-  top: -70%;
+  top: -125%;
 }
 
 .menu__main {
