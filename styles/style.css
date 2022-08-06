@@ -1,3 +1,5 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">');
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -237,6 +239,7 @@ html {
 
 html {
   font-size: 125%;
+  font-family: "Poppins", sans-serif;
 }
 
 ul, li, a {
