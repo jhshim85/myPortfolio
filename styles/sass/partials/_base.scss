@@ -122,7 +122,8 @@ img {
     .skills__list--tech {
       li {
         color: $white;
-        i {
+        i,
+        iconify-icon {
           color: $yellowOrange;
         }
       }
@@ -274,7 +275,8 @@ img {
     .skills__list--tech {
       li {
         color: $lightGrey;
-        i {
+        i,
+        iconify-icon {
           color: $lightGreen;
         }
       }

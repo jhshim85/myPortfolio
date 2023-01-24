@@ -376,7 +376,8 @@ img {
 .page__theme--dark .skills .skills__list--tech li {
   color: #fff;
 }
-.page__theme--dark .skills .skills__list--tech li i {
+.page__theme--dark .skills .skills__list--tech li i,
+.page__theme--dark .skills .skills__list--tech li iconify-icon {
   color: #ffb400;
 }
 .page__theme--dark .skills .skills__list--tech .upcoming__skill--text {
@@ -503,7 +504,8 @@ img {
 .page__theme--light .skills .skills__list--tech li {
   color: #666;
 }
-.page__theme--light .skills .skills__list--tech li i {
+.page__theme--light .skills .skills__list--tech li i,
+.page__theme--light .skills .skills__list--tech li iconify-icon {
   color: #72b626;
 }
 .page__theme--light .skills .skills__list--tech .upcoming__skill--text {
@@ -850,7 +852,19 @@ header {
   margin-top: 50px;
   gap: 10px;
 }
-.skills__list--tech li i {
+.skills__list--tech li .icon__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skills__list--tech li i,
+.skills__list--tech li iconify-icon {
   font-size: 2.5rem;
 }
 .skills__list--tech li p {
