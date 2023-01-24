@@ -156,7 +156,8 @@ img {
       .project__skill--list {
         li {
           color: $white;
-          i {
+          i,
+          iconify-icon {
             color: $yellowOrange;
           }
         }
@@ -309,7 +310,8 @@ img {
       .project__skill--list {
         li {
           color: $lightGrey;
-          i {
+          i,
+          iconify-icon {
             color: $lightGreen;
           }
         }

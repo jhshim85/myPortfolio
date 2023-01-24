@@ -402,7 +402,8 @@ img {
 .page__theme--dark .projects .project__container--text .project__skill--list li {
   color: #fff;
 }
-.page__theme--dark .projects .project__container--text .project__skill--list li i {
+.page__theme--dark .projects .project__container--text .project__skill--list li i,
+.page__theme--dark .projects .project__container--text .project__skill--list li iconify-icon {
   color: #ffb400;
 }
 .page__theme--dark .projects .project__container--text .project__description {
@@ -530,7 +531,8 @@ img {
 .page__theme--light .projects .project__container--text .project__skill--list li {
   color: #666;
 }
-.page__theme--light .projects .project__container--text .project__skill--list li i {
+.page__theme--light .projects .project__container--text .project__skill--list li i,
+.page__theme--light .projects .project__container--text .project__skill--list li iconify-icon {
   color: #72b626;
 }
 .page__theme--light .projects .project__container--text .project__description {
