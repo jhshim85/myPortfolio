@@ -838,10 +838,12 @@ header {
 
 .skills__list--tech {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 220px));
+  grid-template-columns: repeat(5, 1fr);
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  gap: 50px 10px;
+  margin: 0 30px 50px 30px;
 }
 .skills__list--tech li {
   display: -webkit-box;
@@ -1096,6 +1098,9 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .skills__list--tech {
+    grid-template-columns: repeat(4, 1fr);
+  }
   .project__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1107,11 +1112,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media (max-width: 792px) {
-  .skills__list--tech {
-    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 180px));
   }
 }
 @media (max-width: 768px) {
@@ -1144,7 +1144,7 @@ footer {
     letter-spacing: 0.04rem;
   }
   .heading__container .heading__button--text,
-.heading__container .heading__button--icon {
+  .heading__container .heading__button--icon {
     font-size: 0.88rem;
   }
   .about__container .about__text--container .about__text--title {
@@ -1189,12 +1189,16 @@ footer {
     font-size: 3.2rem;
   }
   .skills__list--tech {
-    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 150px));
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 480px) {
   .wrapper {
     width: 80%;
+  }
+  .skills__list--tech {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
   }
 }
 @media (max-width: 391px) {
@@ -1214,7 +1218,7 @@ footer {
     letter-spacing: 0.04rem;
   }
   .heading__container .heading__button--text,
-.heading__container .heading__button--icon {
+  .heading__container .heading__button--icon {
     font-size: 0.7rem;
   }
   .section__heading {
@@ -1222,13 +1226,5 @@ footer {
   }
   .section__heading--bg {
     font-size: 2.56rem;
-  }
-  .skills__list--tech {
-    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 120px));
-  }
-}
-@media (max-width: 315px) {
-  .skills__list--tech {
-    grid-template-columns: repeat(auto-fill, minmax(calc(20% - 10px), 100px));
   }
 }
